@@ -9,11 +9,11 @@ on:
   schedule:
     - cron: '34 12 * * *'
   push:
-    branches: [ "main" ]
+    branches: [ "cicd-containers" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "cicd-containers" ]
 
 env:
   # Use docker.io for Docker Hub if empty
